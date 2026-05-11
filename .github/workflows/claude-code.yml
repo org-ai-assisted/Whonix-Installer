@@ -20,7 +20,7 @@ permissions:
 
 jobs:
   review:
-    uses: org-ai-assisted/developer-meta-files/.github/workflows/reusable-claude-code-review.yml@master
+    uses: ${{ vars.REUSABLE_OWNER }}/developer-meta-files/.github/workflows/reusable-claude-code-review.yml@master
     ## Explicit secret forwarding (NOT 'secrets: inherit'). With
     ## inherit, every caller-side secret would flow into the
     ## reusable; the explicit map caps the reusable's secrets
